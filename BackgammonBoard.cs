@@ -19,6 +19,16 @@ public class BackgammonBoard
         Moves = new List<(int start, int end)>();
     }
 
+    public BackgammonBoard(IEnumerable<int> whitePieces, IEnumerable<int> blackPieces, bool isWhitesTurn, IEnumerable<(int, int)> moves)
+    {
+        WhitePieces = whitePieces.ToArray();
+        BlackPieces = blackPieces.ToArray();
+
+        IsWhitesTurn = isWhitesTurn;
+
+        Moves = moves.ToList();
+    }
+
     public static IEnumerable<int> GetStandardBoardSetup()
     {
         return
