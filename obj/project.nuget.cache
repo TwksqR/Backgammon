@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "SdQd35EuJb8=",
+  "dgSpecHash": "jmwjlh9epzY=",
   "success": true,
   "projectFilePath": "C:\\Coding\\Twksqr\\Backgammon\\Backgammon.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\joshua\\.nuget\\packages\\spectre.console\\0.49.1\\spectre.console.0.49.1.nupkg.sha512"
+  ],
   "logs": []
 }
