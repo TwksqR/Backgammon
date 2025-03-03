@@ -14,7 +14,7 @@ public class BackgammonBoard
     public BackgammonBoard()
     {
         WhitePieces = GetStandardBoardSetup().ToArray();
-        BlackPieces = GetStandardBoardSetup().ToArray();
+        BlackPieces = GetStandardBoardSetup().Reverse().ToArray();
 
         IsWhitesTurn = true;
 
@@ -24,7 +24,7 @@ public class BackgammonBoard
     public BackgammonBoard(IEnumerable<int> whitePieces, IEnumerable<int> blackPieces, bool isWhitesTurn, IEnumerable<(int, int)> moves)
     {
         WhitePieces = whitePieces.ToArray();
-        BlackPieces = blackPieces.ToArray();
+        BlackPieces = blackPieces.Reverse().ToArray();
 
         IsWhitesTurn = isWhitesTurn;
 
