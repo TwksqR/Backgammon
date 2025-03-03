@@ -9,6 +9,8 @@ public class BackgammonBoard
 
     public List<(int start, int end)> Moves { get; }
 
+    private readonly Random _rand = new(DateTime.UtcNow.Millisecond);
+
     public BackgammonBoard()
     {
         WhitePieces = GetStandardBoardSetup().ToArray();
@@ -38,5 +40,10 @@ public class BackgammonBoard
             0, 0, 0, 0, 3, 0,
             5, 0, 0, 0, 0, 0
         ];
+    }
+
+    public int GetDieRoll(int maxRoll)
+    {
+        return _rand.Next(maxRoll) + 1;
     }
 }
