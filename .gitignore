@@ -1,0 +1,6 @@
+/bin
+/obj
+/obj/Debug
+/obj/Debug/net9.0
+obj/Debug/net9.0/Backgammon.AssemblyInfo.cs
+obj/Debug/net9.0/Backgammon.AssemblyInfoInputs.cache
